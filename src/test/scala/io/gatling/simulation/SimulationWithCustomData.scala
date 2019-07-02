@@ -11,8 +11,8 @@ import org.apache.kafka.common.serialization.IntegerSerializer
 import scala.concurrent.duration._
 
 class SimulationWithCustomData extends Simulation {
-  val kafkaTopic = "test_topic"
-  val kafkaBrokers = "localhost:9092"
+  val kafkaTopic = "test_topic_custom"
+  val kafkaBrokers = "kafka-1:9092,kafka-2:9093"
 
   val props = new util.HashMap[String, Object]()
   props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaBrokers)

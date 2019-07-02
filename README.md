@@ -60,3 +60,16 @@ mvn gatling:execute -Dgatling.simulationClass=io.gatling.simulation.BasicSimulat
 
 - `Gatling feeders` are supported & a `custom csv file can be passed for loading data`. Here is an [example](src/test/scala/io/gatling/simulation/FeederByteArraySimulation.scala)
 
+# Docker-compose for testing
+
+    
+    docker-compose up -d
+   
+  
+### Add to host docker servers
+   
+  - sudo nano /etc/hosts
+   
+         127.0.0.1 kafka-1
+         127.0.0.1 kafka-2
+         127.0.0.1 schema-registry
